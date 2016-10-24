@@ -1,0 +1,78 @@
+body {
+	font-family: monospace;
+}
+
+
+/*NAVBAR*/
+nav {
+	display: block;
+	background-color: #4d4d4d;
+	font-size: 1.5em;
+	padding: 5px;
+}
+
+a.navlink:link {
+	color: #f2f2f2;
+	text-decoration: none;
+}
+
+a.navlink:visited {
+	color: #f2f2f2;
+	text-decoration: none;
+}
+
+a.navlink:hover {
+	color: #669999;
+	text-decoration: none;
+}
+/*END NAVBAR*/
+
+
+#biophoto {
+	display: block;
+	margin: auto;
+	width: 10%
+}
+
+
+/*ABOUT PAGE*/
+#statpic {
+	float: left;
+	width: 33%;
+}
+
+#statbox {
+	background-color: #d9d9d9;
+	margin: 2px;
+	padding: 10px;
+	float: left;
+	width: 33%;
+}
+
+#charname{
+	text-align: right;
+	text-transform: uppercase;
+	padding-right: 13%;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+ul#stats{
+	list-style-type: none;
+	list-style-position: outside;
+}
+
+
+h1 {
+	line-height: 70%;
+}
+
+h2 {
+	line-height: 70%;
+}
+
+h3{
+	border-bottom-style: solid;
+	border-bottom-color: #669999;
+}
