@@ -1,14 +1,35 @@
+@font-face {
+	font-family: hachi;
+	src: url(fontstyles/hachicro.ttf);
+}
+
+@font-face {
+	font-family: visitor;
+	src: url(fontstyles/visitor1.ttf);
+}
+
+@font-face {
+	font-family: pixel;
+	src: url(fontstyles/pixelmix.ttf);
+}
+
 body {
 	font-family: monospace;
+	color: #f2f2f2;
+	background-color: #1c2324;
 }
 
 
 /*NAVBAR*/
 nav {
+	font-family: hachi;
+	text-transform: uppercase;
+	text-align: center;
 	display: block;
-	background-color: #4d4d4d;
-	font-size: 1.5em;
-	padding: 5px;
+	background-color: #212a2b;
+	font-size: .8em;
+	word-spacing: 5em;
+	padding: 10px;
 }
 
 a.navlink:link {
@@ -28,42 +49,70 @@ a.navlink:hover {
 /*END NAVBAR*/
 
 
-#biophoto {
+img#homepic {
 	display: block;
 	margin: auto;
-	width: 10%
+	width: 80%;
+	padding-top: 100px;
+	border-bottom-style: double;
+	border-bottom-color: #c2d6d6;
+}
+
+p#charname{
+	text-align: right;
+	text-transform: uppercase;
+	padding-right: 10%;
+	letter-spacing: 3px;
+	font-family: visitor;
+	font-size: 1em;
 }
 
 
 /*ABOUT PAGE*/
-#statpic {
-	float: left;
-	width: 33%;
+div > img {
+	display: block;
+	margin: auto;
+	width: 150px;
+	border-style: double;
 }
 
-#statbox {
+div#statbox {
 	background-color: #d9d9d9;
-	margin: 2px;
+	opacity: 0.9;
+	font-family: visitor;
+	color: #404040;
+	margin: auto;
 	padding: 10px;
-	float: left;
-	width: 33%;
+	width: 40%;
 }
 
-#charname{
-	text-align: right;
-	text-transform: uppercase;
-	padding-right: 13%;
-	letter-spacing: 3px;
+span {
+	color: #476b6b;
 	font-weight: bold;
-	font-size: 1.2em;
+	font-size: 1.5em;
+	letter-spacing: 3px;
 }
 
 ul#stats{
 	list-style-type: none;
 	list-style-position: outside;
+	font-size: 1.2em;
 }
 
+.statstitle {
+	font-family: pixel;
+	font-size: 1em;
+	word-spacing: 1em;
+	border-style: none;
+}
 
+p#bio {
+	font-family: pixel;
+	font-size: 14px;
+	line-height: 120%;
+}
+
+/*RESUME PAGE*/
 h1 {
 	line-height: 70%;
 }
