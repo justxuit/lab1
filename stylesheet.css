@@ -32,6 +32,11 @@ nav {
 	padding: 10px;
 }
 
+nav a {
+	display: inline-block;
+	margin: auto;
+}
+
 a.navlink:link {
 	color: #f2f2f2;
 	text-decoration: none;
@@ -48,20 +53,19 @@ a.navlink:hover {
 }
 /*END NAVBAR*/
 
-
-img#homepic {
+#homepic {
 	display: block;
-	margin: auto;
+	margin: 0 auto;
 	width: 80%;
 	padding-top: 100px;
 	border-bottom-style: double;
 	border-bottom-color: #c2d6d6;
 }
 
-p#charname{
+#charname{
 	text-align: right;
 	text-transform: uppercase;
-	padding-right: 10%;
+	margin-right: 10%;
 	letter-spacing: 3px;
 	font-family: visitor;
 	font-size: 1em;
@@ -69,11 +73,13 @@ p#charname{
 
 
 /*ABOUT PAGE*/
-div > img {
+#char-icon {
 	display: block;
 	margin: auto;
 	width: 150px;
 	border-style: double;
+	border-radius: 20px;
+	border-color: #333333;
 }
 
 div#statbox {
@@ -111,6 +117,71 @@ p#bio {
 	font-size: 14px;
 	line-height: 120%;
 }
+
+
+/*PORTFOLIO PAGE*/
+#portfolio-container {
+	margin: 6% 14%;
+}
+
+.portfolio-grid {
+	display: inline-block;
+	margin: 12px 24px;
+	position: relative;
+}
+
+.portfolio-title {
+	background-color: rgba(33, 42, 43, 0.9);
+	font-family: visitor;
+	color: #bfbfbf;
+	font-size: 1.2em;
+	z-index: 99;
+}
+
+#title-left {
+	position: relative;
+	top: 10px;
+	right: 10px;
+}
+
+#title-mid {
+	position: relative;
+	top: 10px;
+	text-align: center;
+}
+
+#title-right {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	text-align: right;
+}
+
+.portfolio-desc {
+	position: absolute;
+	bottom: 2px;
+	left: 0px;
+	color: #000000;
+	opacity: 0;
+	background-color: rgba(33, 42, 43, 0.4);
+}
+
+.grid-pic:hover {
+	opacity: 0.6;
+	-webkit-transition: opacity 600ms;
+	-moz-transition: opacity 600ms;
+	-o-transition: opacity 600ms;
+	transition: opacity 600ms;
+}
+
+.portfolio-grid:hover .portfolio-desc {
+	opacity: 1;
+	-webkit-transition: opacity 600ms;
+	-moz-transition: opacity 600ms;
+	-o-transition: opacity 600ms;
+ 	transition: opacity 600ms;
+}
+
 
 /*RESUME PAGE*/
 h1 {
